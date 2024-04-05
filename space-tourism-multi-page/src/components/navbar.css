@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Figtree:ital,wght@0,300;1,300&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Figtree:ital,wght@0,300;1,300&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+
+    --black:#0B0D17;
+    --grey:#D0D6F9;
+    --white:#FFFFFF;
+    --clr-white: 0 0% 100%;
+    
+}
+
+.mainnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+    background: transparent;
+   /* height: 2em; */
+
+}
+.line{
+    border: solid 1px;
+    width: 100%;
+    position: relative;
+    /* right: 25em; */
+    z-index: 1;
+    border-color: rgb(70, 69, 69);
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 110%;
+    position: relative;
+    z-index: 2;
+    background: hsl(var(--white) / 0.05);    
+    height: 6em;
+    align-items: center;
+    backdrop-filter: blur(1.5rem);
+    ;
+}
+.logo{
+    margin-left:3em;
+    margin-right: 3em;
+}
+a{
+    text-decoration: none;
+    color: var(--grey);
+    letter-spacing: 0.1em;
+    font-family: "Barlow Condensed";
+    height: 100%;
+    align-content: center;
+    /* border: solid; */
+}
+b{
+    /* font-weight: 800; */
+    color:var(--white);
+    margin: 0.5em;
+}
+a:hover{
+    border-bottom: solid;
+    border-color: rgb(175, 174, 174);
+}
