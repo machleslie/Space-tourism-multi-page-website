@@ -1,0 +1,54 @@
+.destinationpage{
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    /* height: 100vh; */
+}
+.subcontent{
+    display: flex;
+    margin: 0 2em;
+    border: solid;
+}
+.destinationplanets{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+}
+.destinations{
+    display: flex;
+    justify-content: space-between;
+    justify-self: start;
+    width: 55%;
+    
+}
+/* .destintion{
+
+} */
+.maincontent{
+    margin-left: 9em;
+    margin-right: 9em;
+    border: solid;
+}
+.heading{
+    margin:5em 0;
+}
+.planetcontent{
+    margin-left:10em;
+    border: solid;
+}
+.line{
+    margin-top: 3em;
+}
+.otherdata{
+    display: flex;
+    margin: 2em 0 ;
+}
+.distance{
+    margin-right: 2em;
+}
+b{
+    font-weight: 500;
+    color: rgba(146, 146, 146,0.8);
+
+}

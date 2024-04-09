@@ -1,0 +1,59 @@
+:root{
+
+    --black:#0B0D17;
+    --grey:#D0D6F9;
+    --white:#FFFFFF;
+    --clr-white: 0 0% 100%;
+    --whiteish: hsl(var(--white) / 0.05)
+    
+}
+.mainhome{
+    background-image: url('./assets/home/background-home-desktop.jpg');
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    height: 100vh; 
+}
+
+h1,h5,p{
+    margin: 0;
+}
+.maincontainer{
+    display: flex;
+    margin-top: 12em;
+    margin-left: 9em;
+    margin-right: 9em;
+}
+.content{
+    width: 35%;
+}
+.explorebtn{
+    align-self: center;
+    /* justify-items: center; */
+    display: flex;
+    /* border: solid; */
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+    border: none;
+}
+button{
+    height: 10em;
+    width: 10em;
+    border-radius: 1000px;
+    font-family: "Bellefair";
+    font-size: 2em;
+    color: black;
+    border: none;
+    
+}
+.explore{
+    color: black;
+    text-decoration: none;
+}
+
+button:hover{
+    /* text-decoration: underline; */
+    box-shadow: 1px 1px 1px 50px rgba(146, 146, 146,0.5);
+    
+}
