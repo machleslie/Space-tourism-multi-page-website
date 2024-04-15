@@ -1,54 +1,49 @@
-.destinationpage{
-    background-image: url("./assets/destination/background-destination-desktop.jpg");
-    background-size: cover; /* Cover the entire element */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    /* height: 100vh; */
+.destinationpage {
+  background-image: url("./assets/destination/background-destination-desktop.jpg");
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  /* height: 100vh; */
 }
-.subcontent{
-    display: flex;
-    margin: 0 2em;
-    border: solid;
+.subcontent {
+  display: flex;
+  margin: 0 2em;
 }
-.destinationplanets{
-    display: flex;
-    flex-direction: column;
-    border: solid;
+.destinationplanets {
+  display: flex;
+  flex-direction: column;
 }
-.destinations{
-    display: flex;
-    justify-content: space-between;
-    justify-self: start;
-    width: 55%;
-    
+.destinations {
+  display: flex;
+  justify-content: space-between;
+  justify-self: start;
+  width: 55%;
 }
 /* .destintion{
 
 } */
-.maincontent{
-    margin-left: 9em;
-    margin-right: 9em;
-    border: solid;
+.maincontent {
+  margin-left: 9em;
+  margin-right: 9em;
 }
-.heading{
-    margin:5em 0;
+.heading {
+  margin: 5em 0;
 }
-.planetcontent{
-    margin-left:10em;
-    border: solid;
+.planetcontent {
+  margin-left: 10em;
 }
-.line{
-    margin-top: 3em;
+.line {
+  margin-top: 3em;
+  width: 100%;
 }
-.otherdata{
-    display: flex;
-    margin: 2em 0 ;
+.otherdata {
+  display: flex;
+  margin: 2em 0;
 }
-.distance{
-    margin-right: 2em;
+.distance {
+  margin-right: 2em;
 }
-b{
-    font-weight: 500;
-    color: rgba(146, 146, 146,0.8);
-
+b {
+  font-weight: 500;
+  color: rgba(146, 146, 146, 0.8);
 }
