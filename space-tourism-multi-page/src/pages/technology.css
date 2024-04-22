@@ -1,0 +1,27 @@
+.technologypage{
+    background-image: url('./assets/technology/background-technology-desktop.jpg');
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+}
+.numberbtn{
+    color: rgba(146, 146, 146,0.8);
+    border: solid;
+    width: 4em;
+    height: 4em;
+    border-radius: 9999px;
+    text-align: center;
+    align-content: center;
+    border-width: 1px;
+    cursor: pointer;
+}
+.lables{
+    display: flex;    
+    flex-wrap: wrap;
+}
+.detailsparagraph{
+    margin-left: 1em;
+}
+.numberbtn:hover{
+    color: white;
+}

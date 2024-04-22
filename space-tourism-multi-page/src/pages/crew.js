@@ -11,7 +11,7 @@ const Crew = () => {
   const [crew, setCrew] = useState(Data.crew);
   const [position, setPosition] = useState(0);
 
-  console.log(crew[position]);
+  // console.log(crew[position]);
 
   // console.log(crew);
   useEffect(() => {
