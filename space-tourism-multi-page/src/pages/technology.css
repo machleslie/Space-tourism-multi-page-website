@@ -25,3 +25,11 @@
 .numberbtn:hover{
     color: white;
 }
+.activel{
+    background-color: white;
+    color: black;
+}
+.activel:hover{
+    color: white;
+    background-color: transparent;
+}

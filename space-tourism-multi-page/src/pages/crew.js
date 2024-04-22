@@ -10,7 +10,7 @@ import Anousheh from "./assets/crew/image-anousheh-ansari.png";
 const Crew = () => {
   const [crew, setCrew] = useState(Data.crew);
   const [position, setPosition] = useState(0);
-
+  const[active,setActive]=useState(0)
   // console.log(crew[position]);
 
   // console.log(crew);
@@ -58,28 +58,31 @@ const Crew = () => {
             <p className="detailsparagraph">{getdetails().bio}</p></div>
             <div className="btns">
               <div
-                className="btn"
+                className={active===0?"btn activem":"btn"}
                 onClick={() => {
                   setPosition(0);
-
+                  setActive(0)
                 }}
               ></div>
               <div
-                className="btn"
+                className={active===1?"btn activem":"btn"}
                 onClick={() => {
                   setPosition(1);
+                  setActive(1)
                 }}
               ></div>
               <div
-                className="btn"
+                className={active===2?"btn activem":"btn"}
                 onClick={() => {
                   setPosition(2);
+                  setActive(2)
                 }}
               ></div>
               <div
-                className="btn"
+                className={active===3?"btn activem":"btn"}
                 onClick={() => {
                   setPosition(3);
+                  setActive(3)
                 }}
               ></div>
             </div>

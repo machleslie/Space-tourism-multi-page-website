@@ -1,11 +1,12 @@
 import "./navbar.css";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
   return (
     <div className="mainnav">
       <div className="logo">
-        <Link to="/">
+        <Link to="/" className="log">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
             <g fill="none" fillRule="evenodd">
               <circle cx="24" cy="24" r="24" fill="#FFF" />

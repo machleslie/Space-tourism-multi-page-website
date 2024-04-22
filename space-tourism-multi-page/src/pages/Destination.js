@@ -1,5 +1,5 @@
 import React from "react";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../components/navbar";
 import "./destination.css";
 import Data from "../data";
@@ -10,12 +10,10 @@ import titan from "./assets/destination/image-titan.png";
 
 const Destination = () => {
   const [position, setPosition] = useState(0);
-  const[destinations, setDestinations]=useState(Data.destinations)
-console.log(Data)
-  useEffect(()=>{
-    setDestinations(Data.destinations)
-
-  },[destinations])
+  const [destinations, setDestinations] = useState(Data.destinations);
+  useEffect(() => {
+    setDestinations(Data.destinations);
+  }, [destinations]);
 
   // getting destination names
   function getnames() {
@@ -29,26 +27,24 @@ console.log(Data)
   }
 
   // getting the current image
-  function getcurrentimage(){
-       if (getdetails(position).name === "Moon") {
-        return moon;
-      }
-      if (getdetails(position).name === "Mars") {
-        return mars;
-      }
-      if (getdetails(position).name === "Europa") {
-        return europa;
-      }
-      if (getdetails(position).name === "Titan") {
-        return titan;
-      }
-      return null;
-  
+  function getcurrentimage() {
+    if (getdetails(position).name === "Moon") {
+      return moon;
+    }
+    if (getdetails(position).name === "Mars") {
+      return mars;
+    }
+    if (getdetails(position).name === "Europa") {
+      return europa;
+    }
+    if (getdetails(position).name === "Titan") {
+      return titan;
+    }
+    return null;
   }
-const path=getcurrentimage()
-console.log(path)
-  
-  
+  const path = getcurrentimage();
+
+  const [active,setActive]=useState(0)
   
 
   return (
@@ -56,42 +52,48 @@ console.log(path)
       <Navbar />
       <div className="maincontent">
         <div className="heading">
-          <h5><b>01</b> PICK A DESTINATION</h5>
+          <h5>
+            <b>01</b> PICK A DESTINATION
+          </h5>
         </div>
         <div className="subcontent">
-        <div className="image">            
-         {path && <img src={path} alt={getdetails(position.name)} />}
-        </div>
-        <div className="destinationplanets">
-       
+          <div className="image">
+            {path && <img src={path} alt={getdetails(position.name)} />}
+          </div>
+          <div className="destinationplanets">
+            <div className="planetcontent">
+              <div className="destinations">
+                {getnames().map((name, index) => {
+                  return (
+                    <p 
+                    className={index === active ? "destination active" : "destination"}
+                      onClick={() => {
+                        setPosition(index);
+                        setActive(index)
+                      }}
+                      key={index}
+                    >
+                      {name}
+                    </p>
+                  );
+                })}
+              </div>
 
-        <div className="planetcontent">
-        <div className="destinations">
-          {getnames().map((name, index) => {
-            
-            return (
-              <p className="destintion" onClick={() => setPosition(index)} key={index}>
-                {name}
-              </p>
-            );
-          })}
-        </div>
-
-          <h1>{getdetails(position).name}</h1>
-          <p>{getdetails(position).description}</p>
-          <div className="line"></div>
-          <div className="otherdata">
-          <div className="distance">
-            <p className="subheading2">AVG. DISTANCE</p>
-            <p className="subheading1">{getdetails(position).distance}</p>
+              <h1>{getdetails(position).name}</h1>
+              <p>{getdetails(position).description}</p>
+              <div className="line"></div>
+              <div className="otherdata">
+                <div className="distance">
+                  <p className="subheading2">AVG. DISTANCE</p>
+                  <p className="subheading1">{getdetails(position).distance}</p>
+                </div>
+                <div className="travel">
+                  <p className="subheading2">EST. TRAVEL TIME</p>
+                  <p className="subheading1">{getdetails(position).travel}</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="travel">
-            <p className="subheading2">EST. TRAVEL TIME</p>
-            <p className="subheading1">{getdetails(position).travel}</p>
-          </div>
-          </div>
-        </div>
-        </div>
         </div>
       </div>
     </div>

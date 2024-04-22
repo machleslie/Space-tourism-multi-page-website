@@ -15,16 +15,16 @@
     align-items: center;
     padding-top: 2em;
     background: transparent;
-   /* height: 2em; */
+   
 
 }
 .line{
     border: solid 1px;
     width: 100%;
     position: relative;
-    /* right: 25em; */
     z-index: 1;
     border-color: rgb(70, 69, 69);
+    margin-bottom: 2%;
 }
 .navlinks{
     display: flex;
@@ -60,4 +60,7 @@ b{
 a:hover{
     border-bottom: solid;
     border-color: rgb(175, 174, 174);
+}
+.log:hover{
+    border-bottom: none;
 }

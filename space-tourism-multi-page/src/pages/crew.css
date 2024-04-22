@@ -18,10 +18,14 @@ b{
 .btn{
     width: 10px;
     height: 10px;   
-    background-color: white;
+    background-color:rgba(146, 146, 146,0.3);
     margin-top: 2%;
     border-radius: 1000px;
     display: block;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:rgba(146, 146, 146,0.8);
 }
 /* .image{
     
@@ -49,4 +53,7 @@ h3{
 }
 .detailsparagraph{
     margin-right: 8em;
+}
+.activem{
+    background-color: white;
 }

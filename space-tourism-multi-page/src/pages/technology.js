@@ -5,20 +5,20 @@ import data from "../data.json"
 import launch from "./assets/technology/image-launch-vehicle-portrait.jpg";
 // import launchl from "./assets/technology/image-launch-vehicle-landscape.jpg";
 import spaceport from "./assets/technology/image-spaceport-portrait.jpg";
-import spaceportl from "./assets/technology/image-spaceport-landscape.jpg";
+// import spaceportl from "./assets/technology/image-spaceport-landscape.jpg";
 import capsule from "./assets/technology/image-space-capsule-portrait.jpg";
 // import capsulel from "./assets/technology/image-space-capsule-landscape.jpg";
 const Technology = () => {
     const [postion,setPosition]=useState(0)
-    console.log(data.technology)
+    const[active,setActive]=useState(0)
   function showpicture(){
-      if(postion==0){
+      if(postion === 0){
           return launch
       }
-      if(postion==1){
+      if(postion===1){
           return capsule
       }
-      if(postion==2){
+      if(postion===2){
           return spaceport
       }
   }
@@ -38,14 +38,17 @@ const Technology = () => {
         <div className="subcontent">
             .
             <div className="lables">
-                <div className="numberbtn" onClick={()=>{
+                <div className={active===0?"numberbtn activel":"numberbtn"} onClick={()=>{
                     setPosition(0)
+                    setActive(0)
                 }}>1</div>
-                <div className="numberbtn" onClick={()=>{
+                <div className={active===1?"numberbtn activel":"numberbtn"} onClick={()=>{
                     setPosition(1)
+                    setActive(1)
                 }}>2</div>
-                <div className="numberbtn" onClick={()=>{
+                <div className={active===2?"numberbtn activel":"numberbtn"} onClick={()=>{
                     setPosition(2)
+                    setActive(2)
                 }}>3</div>
             </div>
             <div className="detailsparagraph">
